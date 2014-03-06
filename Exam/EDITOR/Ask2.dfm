@@ -7,7 +7,7 @@ object FrmAsk2: TFrmAsk2
   Color = 11913934
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -13
+  Font.Height = -10
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
@@ -16,14 +16,14 @@ object FrmAsk2: TFrmAsk2
   OnCreate = FormCreate
   DesignSize = (
     1066
-    777)
-  PixelsPerInch = 120
-  TextHeight = 16
+    782)
+  PixelsPerInch = 96
+  TextHeight = 13
   object SpeedButton5: TSpeedButton
-    Left = 751
-    Top = 64
-    Width = 265
-    Height = 33
+    Left = 610
+    Top = 52
+    Width = 216
+    Height = 27
     Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1074#1086#1087#1088#1086#1089#1099' '#1080#1079' '#1089#1091#1097#1077#1089#1090#1074#1091#1102#1097#1080#1093
     Glyph.Data = {
       36030000424D3603000000000000360000002800000010000000100000000100
@@ -55,939 +55,36 @@ object FrmAsk2: TFrmAsk2
     OnClick = SpeedButton5Click
   end
   object lFontPrint: TLabel
-    Left = 40
-    Top = 210
-    Width = 110
-    Height = 20
+    Left = 33
+    Top = 171
+    Width = 90
+    Height = 17
     Caption = 'lFontPrint'
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
-    Font.Height = -18
+    Font.Height = -15
     Font.Name = 'Courier New'
     Font.Style = []
     ParentFont = False
     Visible = False
   end
-  object Panel3: TPanel
-    Left = 16
-    Top = 264
-    Width = 1001
-    Height = 516
-    Anchors = [akLeft, akTop, akBottom]
-    Color = 14869218
-    TabOrder = 4
-    DesignSize = (
-      1001
-      516)
-    object Bevel2: TBevel
-      Left = 5
-      Top = 8
-      Width = 971
-      Height = 33
-      Anchors = [akLeft, akTop, akRight]
-      Shape = bsFrame
-    end
-    object Label2: TLabel
-      Left = 26
-      Top = 15
-      Width = 65
-      Height = 16
-      Anchors = [akLeft, akRight]
-      Caption = #1042#1086#1087#1088#1086#1089' '#8470
-    end
-    object lCurQuest: TLabel
-      Left = 206
-      Top = 12
-      Width = 18
-      Height = 19
-      Anchors = [akLeft, akRight]
-      Caption = '46'
-      Font.Charset = RUSSIAN_CHARSET
-      Font.Color = 33023
-      Font.Height = -17
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Visible = False
-    end
-    object Label5: TLabel
-      Left = 143
-      Top = 15
-      Width = 16
-      Height = 16
-      Anchors = [akLeft, akRight]
-      Caption = #1080#1079
-    end
-    object lQCount: TLabel
-      Left = 168
-      Top = 12
-      Width = 18
-      Height = 19
-      Anchors = [akLeft, akRight]
-      Caption = '46'
-      Font.Charset = RUSSIAN_CHARSET
-      Font.Color = 25284
-      Font.Height = -17
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-    end
-    object Bevel9: TBevel
-      Left = 781
-      Top = 331
-      Width = 2
-      Height = 41
-      Anchors = [akRight, akBottom]
-    end
-    object Label15: TLabel
-      Left = 18
-      Top = 34
-      Width = 59
-      Height = 16
-      Anchors = [akLeft, akRight]
-      Caption = #1042#1086#1087#1088#1086#1089':'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = 'MS Sans Serif'
-      Font.Style = [fsBold]
-      ParentFont = False
-    end
-    object Bevel12: TBevel
-      Left = 8
-      Top = 48
-      Width = 969
-      Height = 57
-    end
-    object Label16: TLabel
-      Left = 18
-      Top = 466
-      Width = 178
-      Height = 16
-      Anchors = [akLeft, akRight]
-      Caption = #1053#1086#1088#1084#1072#1090#1080#1074#1085#1099#1081' '#1076#1086#1082#1091#1084#1077#1085#1090
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = 'MS Sans Serif'
-      Font.Style = [fsBold]
-      ParentFont = False
-    end
-    object label_numpp: TLabel
-      Left = 792
-      Top = 16
-      Width = 46
-      Height = 16
-      Caption = 'NumPP'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = 33023
-      Font.Height = -13
-      Font.Name = 'MS Sans Serif'
-      Font.Style = []
-      ParentFont = False
-      Transparent = True
-      Visible = False
-    end
-    object DBNavigator1: TDBNavigator
-      Left = 232
-      Top = 11
-      Width = 504
-      Height = 24
-      DataSource = dsQuest
-      VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbInsert, nbDelete, nbPost, nbCancel, nbRefresh]
-      Anchors = [akLeft, akRight]
-      Hints.Strings = (
-        #1050' '#1087#1077#1088#1074#1086#1084#1091' '#1074#1086#1087#1088#1086#1089#1091
-        #1050' '#1087#1088#1077#1076#1099#1076#1091#1097#1077#1084#1091' '#1074#1086#1087#1088#1086#1089#1091
-        #1050' '#1089#1083#1077#1076#1091#1102#1097#1077#1084#1091' '#1074#1086#1087#1088#1086#1089#1091
-        #1050' '#1087#1086#1089#1083#1077#1076#1085#1077#1084#1091' '#1074#1086#1087#1088#1086#1089#1091
-        #1053#1086#1074#1099#1081' '#1074#1086#1087#1088#1086#1089
-        #1059#1076#1072#1083#1080#1090#1100' '#1074#1086#1087#1088#1086#1089
-        'Edit record'
-        #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1080#1079#1084#1077#1085#1077#1085#1080#1103
-        #1054#1090#1084#1077#1085#1080#1090#1100' '#1080#1079#1084#1077#1085#1077#1085#1080#1103
-        #1054#1073#1085#1086#1074#1080#1090#1100' '#1076#1072#1085#1085#1099#1077)
-      ParentShowHint = False
-      ShowHint = True
-      TabOrder = 0
-      OnClick = DBNavigator1Click
-    end
-    object QuestMemo: TDBMemo
-      Left = 9
-      Top = 57
-      Width = 968
-      Height = 50
-      Anchors = [akLeft, akRight]
-      BorderStyle = bsNone
-      Color = 16313050
-      DataField = 'Text'
-      DataSource = dsQuest
-      Font.Charset = RUSSIAN_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -15
-      Font.Name = 'Arial'
-      Font.Style = [fsBold, fsItalic]
-      ParentFont = False
-      TabOrder = 1
-      OnKeyPress = QuestMemoKeyPress
-    end
-    object pc: TPageControl
-      Left = 13
-      Top = 128
-      Width = 972
-      Height = 330
-      ActivePage = tsSingle
-      Anchors = [akRight]
-      HotTrack = True
-      Style = tsFlatButtons
-      TabHeight = 20
-      TabOrder = 2
-      OnChange = pcChange
-      object tsSingle: TTabSheet
-        Caption = #1054#1076#1085#1086#1074#1072#1088#1080#1072#1085#1090#1085#1099#1081
-        object Bevel7: TBevel
-          Left = 24
-          Top = 10
-          Width = 905
-          Height = 287
-          Shape = bsFrame
-        end
-        object Label4: TLabel
-          Left = 33
-          Top = 4
-          Width = 125
-          Height = 16
-          Caption = #1042#1072#1088#1080#1072#1085#1090#1099' '#1086#1090#1074#1077#1090#1086#1074':'
-        end
-        object Bevel3: TBevel
-          Left = 49
-          Top = 236
-          Width = 840
-          Height = 47
-        end
-        object Bevel4: TBevel
-          Left = 49
-          Top = 180
-          Width = 840
-          Height = 47
-        end
-        object Bevel5: TBevel
-          Left = 49
-          Top = 124
-          Width = 840
-          Height = 47
-        end
-        object Bevel6: TBevel
-          Left = 49
-          Top = 48
-          Width = 840
-          Height = 45
-        end
-        object Label6: TLabel
-          Left = 32
-          Top = 63
-          Width = 13
-          Height = 18
-          Caption = '4'
-          Font.Charset = SYMBOL_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Webdings'
-          Font.Style = []
-          ParentFont = False
-          Transparent = True
-        end
-        object Label7: TLabel
-          Left = 32
-          Top = 139
-          Width = 13
-          Height = 18
-          Caption = '4'
-          Font.Charset = SYMBOL_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Webdings'
-          Font.Style = []
-          ParentFont = False
-          Transparent = True
-        end
-        object Label8: TLabel
-          Left = 32
-          Top = 195
-          Width = 13
-          Height = 18
-          Caption = '4'
-          Font.Charset = SYMBOL_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Webdings'
-          Font.Style = []
-          ParentFont = False
-          Transparent = True
-        end
-        object Label9: TLabel
-          Left = 32
-          Top = 251
-          Width = 13
-          Height = 18
-          Caption = '4'
-          Font.Charset = SYMBOL_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Webdings'
-          Font.Style = []
-          ParentFont = False
-          Transparent = True
-        end
-        object DBMemo1: TDBMemo
-          Left = 50
-          Top = 49
-          Width = 839
-          Height = 43
-          BorderStyle = bsNone
-          Color = 14016986
-          DataField = 'Answer1'
-          DataSource = dsQuest
-          Font.Charset = RUSSIAN_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = [fsBold, fsItalic]
-          ParentFont = False
-          ScrollBars = ssVertical
-          TabOrder = 0
-        end
-        object DBMemo2: TDBMemo
-          Left = 50
-          Top = 125
-          Width = 839
-          Height = 45
-          BorderStyle = bsNone
-          Color = 14342889
-          DataField = 'Answer2'
-          DataSource = dsQuest
-          Font.Charset = RUSSIAN_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = [fsBold, fsItalic]
-          ParentFont = False
-          ScrollBars = ssVertical
-          TabOrder = 1
-        end
-        object DBMemo3: TDBMemo
-          Left = 50
-          Top = 181
-          Width = 839
-          Height = 45
-          BorderStyle = bsNone
-          Color = 14342889
-          DataField = 'Answer3'
-          DataSource = dsQuest
-          Font.Charset = RUSSIAN_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = [fsBold, fsItalic]
-          ParentFont = False
-          ScrollBars = ssVertical
-          TabOrder = 2
-        end
-        object DBMemo4: TDBMemo
-          Left = 50
-          Top = 237
-          Width = 839
-          Height = 45
-          BorderStyle = bsNone
-          Color = 14342889
-          DataField = 'Answer4'
-          DataSource = dsQuest
-          Font.Charset = RUSSIAN_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = [fsBold, fsItalic]
-          ParentFont = False
-          ScrollBars = ssVertical
-          TabOrder = 3
-        end
-        object StaticText1: TStaticText
-          Left = 9
-          Top = 48
-          Width = 33
-          Height = 17
-          Alignment = taCenter
-          AutoSize = False
-          BorderStyle = sbsSingle
-          Caption = '1'
-          Font.Charset = RUSSIAN_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = [fsBold, fsItalic]
-          ParentFont = False
-          TabOrder = 4
-        end
-        object StaticText2: TStaticText
-          Left = 8
-          Top = 124
-          Width = 34
-          Height = 17
-          Alignment = taCenter
-          AutoSize = False
-          BorderStyle = sbsSingle
-          Caption = '2'
-          Font.Charset = RUSSIAN_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = [fsBold, fsItalic]
-          ParentFont = False
-          TabOrder = 5
-        end
-        object StaticText3: TStaticText
-          Left = 8
-          Top = 180
-          Width = 34
-          Height = 17
-          Alignment = taCenter
-          AutoSize = False
-          BorderStyle = sbsSingle
-          Caption = '3'
-          Font.Charset = RUSSIAN_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = [fsBold, fsItalic]
-          ParentFont = False
-          TabOrder = 6
-        end
-        object StaticText4: TStaticText
-          Left = 8
-          Top = 236
-          Width = 34
-          Height = 17
-          Alignment = taCenter
-          AutoSize = False
-          BorderStyle = sbsSingle
-          Caption = '4'
-          Font.Charset = RUSSIAN_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = [fsBold, fsItalic]
-          ParentFont = False
-          TabOrder = 7
-        end
-        object StaticText5: TStaticText
-          Left = 48
-          Top = 29
-          Width = 153
-          Height = 17
-          Alignment = taCenter
-          AutoSize = False
-          BorderStyle = sbsSingle
-          Caption = #1042#1077#1088#1085#1099#1081' '#1086#1090#1074#1077#1090':  '
-          Font.Charset = RUSSIAN_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          ParentFont = False
-          TabOrder = 8
-        end
-        object StaticText6: TStaticText
-          Left = 48
-          Top = 105
-          Width = 153
-          Height = 17
-          Alignment = taCenter
-          AutoSize = False
-          BorderStyle = sbsSingle
-          Caption = #1053#1077#1074#1077#1088#1085#1099#1077' '#1086#1090#1074#1077#1090#1099':  '
-          Font.Charset = RUSSIAN_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          ParentFont = False
-          TabOrder = 9
-        end
-      end
-      object tsMultiple: TTabSheet
-        Caption = #1052#1091#1083#1100#1090#1080#1074#1072#1088#1080#1072#1085#1090#1085#1099#1081
-        ImageIndex = 1
-        object grdQuest2: TDBGridEh
-          Left = 0
-          Top = 10
-          Width = 585
-          Height = 285
-          AutoFitColWidths = True
-          DataSource = dsQuest2
-          Flat = True
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -15
-          Font.Name = 'MS Sans Serif'
-          Font.Style = []
-          FooterColor = clWindow
-          FooterFont.Charset = DEFAULT_CHARSET
-          FooterFont.Color = clWindowText
-          FooterFont.Height = -13
-          FooterFont.Name = 'MS Sans Serif'
-          FooterFont.Style = []
-          OptionsEh = [dghFixed3D, dghResizeWholeRightPart, dghHighlightFocus, dghClearSelection, dghFitRowHeightToText, dghTraceColSizing]
-          ParentFont = False
-          RowHeight = 2
-          RowLines = 1
-          TabOrder = 0
-          TitleFont.Charset = DEFAULT_CHARSET
-          TitleFont.Color = clWindowText
-          TitleFont.Height = -13
-          TitleFont.Name = 'MS Sans Serif'
-          TitleFont.Style = []
-          TitleHeight = 50
-          VertScrollBar.Tracking = True
-          OnCellClick = grdQuest2CellClick
-          Columns = <
-            item
-              EditButtons = <>
-              FieldName = 'NUM'
-              Footers = <>
-              Title.Caption = #8470
-              Width = 25
-            end
-            item
-              EditButtons = <>
-              FieldName = 'ANSWER'
-              Footers = <>
-              Title.Alignment = taCenter
-              Title.Caption = #1042#1072#1088#1080#1072#1085#1090
-              Width = 516
-            end
-            item
-              EditButtons = <>
-              FieldName = 'CALCYES'
-              Footers = <>
-              Title.Alignment = taCenter
-              Title.Caption = #1042#1077#1088#1077#1085'?'
-              Title.Orientation = tohVertical
-              Width = 22
-            end>
-        end
-      end
-      object TSGraph: TTabSheet
-        Caption = #1043#1088#1072#1092#1080#1095#1077#1089#1082#1080#1081
-        ImageIndex = 2
-        object Bevel11: TBevel
-          Left = 0
-          Top = 10
-          Width = 961
-          Height = 287
-          Shape = bsFrame
-        end
-        object Label14: TLabel
-          Left = 33
-          Top = 4
-          Width = 125
-          Height = 16
-          Caption = #1042#1072#1088#1080#1072#1085#1090#1099' '#1086#1090#1074#1077#1090#1086#1074':'
-        end
-        object Image1: TImage
-          Left = 8
-          Top = 64
-          Width = 225
-          Height = 177
-          Proportional = True
-          Stretch = True
-        end
-        object SBSound1: TSpeedButton
-          Left = 202
-          Top = 248
-          Width = 25
-          Height = 23
-          Hint = #1042#1099#1073#1086#1088' '#1089#1086#1086#1090#1074#1077#1090#1089#1090#1074#1091#1102#1097#1077#1075#1086' '#1092#1072#1081#1083#1072
-          Caption = '...'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -18
-          Font.Name = 'MS Sans Serif'
-          Font.Style = []
-          NumGlyphs = 2
-          ParentFont = False
-          ParentShowHint = False
-          ShowHint = True
-          OnClick = SBSound1Click
-        end
-        object Label17: TLabel
-          Left = 632
-          Top = 24
-          Width = 78
-          Height = 16
-          Caption = #1050#1086#1083#1080#1095#1077#1089#1090#1074#1086
-          Visible = False
-        end
-        object StaticText11: TStaticText
-          Left = 64
-          Top = 20
-          Width = 153
-          Height = 17
-          Alignment = taCenter
-          AutoSize = False
-          BorderStyle = sbsSingle
-          Caption = #1042#1077#1088#1085#1099#1081' '#1086#1090#1074#1077#1090':  '
-          Font.Charset = RUSSIAN_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          ParentFont = False
-          TabOrder = 0
-        end
-        object StaticText12: TStaticText
-          Left = 256
-          Top = 20
-          Width = 153
-          Height = 17
-          Alignment = taCenter
-          AutoSize = False
-          BorderStyle = sbsSingle
-          Caption = #1053#1077#1074#1077#1088#1085#1099#1077' '#1086#1090#1074#1077#1090#1099':  '
-          Font.Charset = RUSSIAN_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          ParentFont = False
-          TabOrder = 1
-        end
-        object Edit5: TEdit
-          Left = 664
-          Top = 16
-          Width = 33
-          Height = 24
-          TabOrder = 2
-          Text = '3'
-          Visible = False
-        end
-        object UpDown1: TUpDown
-          Left = 697
-          Top = 16
-          Width = 15
-          Height = 24
-          Associate = Edit5
-          Min = 1
-          Max = 3
-          Position = 3
-          TabOrder = 3
-          Visible = False
-        end
-        object Panel4: TPanel
-          Left = 240
-          Top = 40
-          Width = 234
-          Height = 249
-          BevelOuter = bvNone
-          Color = 14869218
-          TabOrder = 4
-          object Image2: TImage
-            Left = 4
-            Top = 24
-            Width = 225
-            Height = 177
-            Proportional = True
-            Stretch = True
-          end
-          object SpeedButton2: TSpeedButton
-            Left = 200
-            Top = 210
-            Width = 25
-            Height = 23
-            Hint = #1042#1099#1073#1086#1088' '#1089#1086#1086#1090#1074#1077#1090#1089#1090#1074#1091#1102#1097#1077#1075#1086' '#1092#1072#1081#1083#1072
-            Caption = '...'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -18
-            Font.Name = 'MS Sans Serif'
-            Font.Style = []
-            NumGlyphs = 2
-            ParentFont = False
-            ParentShowHint = False
-            ShowHint = True
-            OnClick = SpeedButton2Click
-          end
-          object StaticText8: TStaticText
-            Left = 103
-            Top = 4
-            Width = 34
-            Height = 17
-            Alignment = taCenter
-            AutoSize = False
-            BorderStyle = sbsSingle
-            Caption = '1'
-            Font.Charset = RUSSIAN_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -13
-            Font.Name = 'Arial'
-            Font.Style = [fsBold, fsItalic]
-            ParentFont = False
-            TabOrder = 0
-          end
-          object DBEdit5: TDBEdit
-            Left = 8
-            Top = 209
-            Width = 193
-            Height = 24
-            DataField = 'PATH1'
-            DataSource = dsQuestGr
-            TabOrder = 1
-          end
-        end
-        object Panel5: TPanel
-          Left = 480
-          Top = 40
-          Width = 234
-          Height = 249
-          BevelOuter = bvNone
-          Color = 14869218
-          TabOrder = 5
-          object Image3: TImage
-            Left = 4
-            Top = 24
-            Width = 225
-            Height = 177
-            Proportional = True
-            Stretch = True
-          end
-          object SpeedButton3: TSpeedButton
-            Left = 200
-            Top = 210
-            Width = 25
-            Height = 23
-            Hint = #1042#1099#1073#1086#1088' '#1089#1086#1086#1090#1074#1077#1090#1089#1090#1074#1091#1102#1097#1077#1075#1086' '#1092#1072#1081#1083#1072
-            Caption = '...'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -18
-            Font.Name = 'MS Sans Serif'
-            Font.Style = []
-            NumGlyphs = 2
-            ParentFont = False
-            ParentShowHint = False
-            ShowHint = True
-            OnClick = SpeedButton3Click
-          end
-          object StaticText7: TStaticText
-            Left = 103
-            Top = 4
-            Width = 34
-            Height = 17
-            Alignment = taCenter
-            AutoSize = False
-            BorderStyle = sbsSingle
-            Caption = '2'
-            Font.Charset = RUSSIAN_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -13
-            Font.Name = 'Arial'
-            Font.Style = [fsBold, fsItalic]
-            ParentFont = False
-            TabOrder = 0
-          end
-          object DBEdit6: TDBEdit
-            Left = 8
-            Top = 209
-            Width = 193
-            Height = 24
-            DataField = 'PATH2'
-            DataSource = dsQuestGr
-            TabOrder = 1
-          end
-        end
-        object Panel6: TPanel
-          Left = 720
-          Top = 40
-          Width = 234
-          Height = 249
-          BevelOuter = bvNone
-          Color = 14869218
-          TabOrder = 6
-          object Image4: TImage
-            Left = 4
-            Top = 24
-            Width = 225
-            Height = 177
-            Proportional = True
-            Stretch = True
-          end
-          object SpeedButton4: TSpeedButton
-            Left = 200
-            Top = 210
-            Width = 25
-            Height = 23
-            Hint = #1042#1099#1073#1086#1088' '#1089#1086#1086#1090#1074#1077#1090#1089#1090#1074#1091#1102#1097#1077#1075#1086' '#1092#1072#1081#1083#1072
-            Caption = '...'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -18
-            Font.Name = 'MS Sans Serif'
-            Font.Style = []
-            NumGlyphs = 2
-            ParentFont = False
-            ParentShowHint = False
-            ShowHint = True
-            OnClick = SpeedButton4Click
-          end
-          object StaticText9: TStaticText
-            Left = 103
-            Top = 4
-            Width = 34
-            Height = 17
-            Alignment = taCenter
-            AutoSize = False
-            BorderStyle = sbsSingle
-            Caption = '3'
-            Font.Charset = RUSSIAN_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -13
-            Font.Name = 'Arial'
-            Font.Style = [fsBold, fsItalic]
-            ParentFont = False
-            TabOrder = 0
-          end
-          object DBEdit7: TDBEdit
-            Left = 8
-            Top = 209
-            Width = 193
-            Height = 24
-            DataField = 'PATH3'
-            DataSource = dsQuestGr
-            TabOrder = 1
-          end
-        end
-        object DBEdit4: TDBEdit
-          Left = 8
-          Top = 248
-          Width = 193
-          Height = 24
-          DataField = 'PATH0'
-          DataSource = dsQuestGr
-          TabOrder = 7
-        end
-      end
-    end
-    object btnGoTo: TBitBtn
-      Left = 775
-      Top = -46
-      Width = 131
-      Height = 27
-      Anchors = [akRight, akBottom]
-      Caption = #1055#1077#1088#1077#1081#1090#1080' '#1082' '#8470
-      Font.Charset = RUSSIAN_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -15
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 4
-      Visible = False
-      Glyph.Data = {
-        42020000424D4202000000000000420000002800000010000000100000000100
-        1000030000000002000000000000000000000000000000000000007C0000E003
-        00001F000000396739673967396739671863B556D65A39673967396739673967
-        39673967396739673967396739673967186394529452D65A3967396739673967
-        396739673967396739673967396739670F1DD65A524A734ED65A396739673967
-        396739673967396739673967396739675121ED18524A31469452186339673967
-        3967396739673967396739673967396739672F1DCA143146524AD65A39673967
-        3967396739673967396739673967396739675225ED18A8103146734ED65A3967
-        396739673967396739673967396739673967B52D3121CB141042314694521863
-        396739673967396739673967396739673967396774250E1DA910314694521863
-        3967396739673967396739673967396739673967D5315221ED18CA14D65A3967
-        3967396739673967396739673967396739671863163A942931210D1939673967
-        396739673967396739673967396739673967F75E373ED5317325396739673967
-        39673967396739673967396739673967396737423742F6351863396739673967
-        3967396739673967396739673967396718635746373ED65A3967396739673967
-        3967396739673967396739673967396718635746163E39673967396739673967
-        3967396739673967396739673967396757465742396739673967396739673967
-        3967396739673967396739673967396757463967396739673967396739673967
-        396739673967}
-      Layout = blGlyphRight
-    end
-    object GotoNum: TEdit
-      Left = 919
-      Top = -47
-      Width = 41
-      Height = 27
-      Anchors = [akRight, akBottom]
-      Font.Charset = RUSSIAN_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 5
-      Text = '1'
-      Visible = False
-    end
-    object DBEdit2: TDBEdit
-      Left = 16
-      Top = 482
-      Width = 857
-      Height = 26
-      DataField = 'NormDoc'
-      DataSource = dsQuest
-      Font.Charset = RUSSIAN_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -15
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 3
-    end
-    object DBEditEh1: TDBEditEh
-      Left = 96
-      Top = 10
-      Width = 41
-      Height = 24
-      DataField = 'NUMPP'
-      DataSource = dsQuest
-      EditButtons = <>
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = 33023
-      Font.Height = -17
-      Font.Name = 'Arial'
-      Font.Style = [fsBold]
-      ParentFont = False
-      TabOrder = 6
-      Visible = True
-    end
-    object button_sort: TButton
-      Left = 848
-      Top = 8
-      Width = 129
-      Height = 33
-      Caption = #1055#1077#1088#1077#1089#1086#1088#1090#1080#1088#1086#1074#1072#1090#1100
-      TabOrder = 7
-      OnClick = button_sortClick
-    end
-  end
   object Panel2: TPanel
-    Left = 16
-    Top = 264
-    Width = 993
-    Height = 481
+    Left = 13
+    Top = 215
+    Width = 807
+    Height = 390
     Caption = 'Panel2'
     Color = 10930928
     TabOrder = 3
     Visible = False
     DesignSize = (
-      993
-      481)
+      807
+      390)
     object bPrintList: TSpeedButton
-      Left = 8
-      Top = 11
-      Width = 250
-      Height = 30
+      Left = 7
+      Top = 9
+      Width = 203
+      Height = 24
       Hint = #1055#1077#1095#1072#1090#1100
       Anchors = [akTop, akRight]
       Caption = #1055#1077#1095#1072#1090#1100' '#1074#1086#1087#1088#1086#1089#1086#1074
@@ -1024,10 +121,10 @@ object FrmAsk2: TFrmAsk2
       OnClick = bPrintListClick
     end
     object bPrintFull: TSpeedButton
-      Left = 504
-      Top = 11
-      Width = 250
-      Height = 30
+      Left = 410
+      Top = 9
+      Width = 203
+      Height = 24
       Hint = #1055#1077#1095#1072#1090#1100' '#1074#1086#1087#1088#1086#1089#1086#1074' '#1089' '#1086#1090#1074#1077#1090#1072#1084#1080
       Anchors = [akTop, akRight]
       Caption = #1055#1077#1095#1072#1090#1100' '#1074#1086#1087#1088#1086#1089#1086#1074' '#1089' '#1086#1090#1074#1077#1090#1072#1084#1080
@@ -1064,10 +161,10 @@ object FrmAsk2: TFrmAsk2
       OnClick = bPrintFullClick
     end
     object sbutt_q_word: TSpeedButton
-      Left = 272
-      Top = 11
-      Width = 100
-      Height = 30
+      Left = 221
+      Top = 9
+      Width = 81
+      Height = 24
       Hint = #1069#1082#1089#1087#1086#1088#1090' '#1074#1086#1087#1088#1086#1089#1086#1074' '#1074' Word'
       Anchors = [akTop, akRight]
       Caption = #1058#1072#1073#1083#1080#1094#1072
@@ -1140,10 +237,10 @@ object FrmAsk2: TFrmAsk2
       OnClick = sbutt_q_wordClick
     end
     object sbutt_q_a_word: TSpeedButton
-      Left = 880
-      Top = 11
-      Width = 100
-      Height = 30
+      Left = 715
+      Top = 9
+      Width = 81
+      Height = 24
       Hint = #1069#1082#1089#1087#1086#1088#1090' '#1074#1086#1087#1088#1086#1089#1086#1074' '#1089' '#1086#1090#1074#1077#1090#1072#1084#1080' '#1074' Word '#1074' '#1074#1080#1076#1077' '#1090#1072#1073#1083#1080#1094#1099
       Anchors = [akTop, akRight]
       Caption = #1058#1072#1073#1083#1080#1094#1072
@@ -1216,10 +313,10 @@ object FrmAsk2: TFrmAsk2
       OnClick = sbutt_q_a_wordClick
     end
     object bPrintFile: TSpeedButton
-      Left = 768
-      Top = 11
-      Width = 100
-      Height = 30
+      Left = 624
+      Top = 9
+      Width = 81
+      Height = 24
       Hint = #1055#1077#1095#1072#1090#1100' '#1074#1086#1087#1088#1086#1089#1086#1074' '#1089' '#1086#1090#1074#1077#1090#1072#1084#1080'  '#1074' '#1092#1072#1081#1083
       Anchors = [akTop, akRight]
       Caption = #1042' '#1092#1072#1081#1083
@@ -1292,10 +389,10 @@ object FrmAsk2: TFrmAsk2
       OnClick = bPrintFileClick
     end
     object bWord: TSpeedButton
-      Left = 464
-      Top = 11
-      Width = 33
-      Height = 30
+      Left = 377
+      Top = 9
+      Width = 27
+      Height = 24
       Hint = #1055#1077#1095#1072#1090#1100' '#1074#1086#1087#1088#1086#1089#1086#1074' '#1089' '#1086#1090#1074#1077#1090#1072#1084#1080' '#1074' Word'
       Anchors = [akTop, akRight]
       Flat = True
@@ -1367,10 +464,10 @@ object FrmAsk2: TFrmAsk2
       OnClick = bWordClick
     end
     object grdList: TDBGridEh
-      Left = 8
-      Top = 48
-      Width = 977
-      Height = 433
+      Left = 7
+      Top = 39
+      Width = 793
+      Height = 352
       Anchors = [akLeft, akTop, akRight]
       AutoFitColWidths = True
       Color = 14869218
@@ -1379,13 +476,13 @@ object FrmAsk2: TFrmAsk2
       Flat = True
       Font.Charset = RUSSIAN_CHARSET
       Font.Color = clWindowText
-      Font.Height = -17
+      Font.Height = -15
       Font.Name = 'Arial'
       Font.Style = []
       FooterColor = clWindow
       FooterFont.Charset = DEFAULT_CHARSET
       FooterFont.Color = clWindowText
-      FooterFont.Height = -13
+      FooterFont.Height = -11
       FooterFont.Name = 'MS Sans Serif'
       FooterFont.Style = []
       ParentFont = False
@@ -1393,7 +490,7 @@ object FrmAsk2: TFrmAsk2
       TabOrder = 0
       TitleFont.Charset = RUSSIAN_CHARSET
       TitleFont.Color = clWindowText
-      TitleFont.Height = -17
+      TitleFont.Height = -15
       TitleFont.Name = 'Arial'
       TitleFont.Style = [fsBold, fsItalic]
       UseMultiTitle = True
@@ -1404,33 +501,936 @@ object FrmAsk2: TFrmAsk2
           FieldName = 'NUMPP'
           Footers = <>
           Title.Caption = 'N'
-          Width = 62
+          Width = 50
         end
         item
           EditButtons = <>
           FieldName = 'TEXT'
           Footers = <>
           Title.Caption = #1057#1087#1080#1089#1086#1082' '#1074#1086#1087#1088#1086#1089#1086#1074' '#1087#1086' '#1090#1077#1084#1077
-          Width = 965
+          Width = 784
         end>
+    end
+  end
+  object Panel3: TPanel
+    Left = 13
+    Top = 215
+    Width = 813
+    Height = 419
+    Anchors = [akLeft, akTop, akBottom]
+    Color = 14869218
+    TabOrder = 4
+    DesignSize = (
+      813
+      419)
+    object Bevel2: TBevel
+      Left = 4
+      Top = 7
+      Width = 789
+      Height = 26
+      Anchors = [akLeft, akTop, akRight]
+      Shape = bsFrame
+    end
+    object Label2: TLabel
+      Left = 21
+      Top = 12
+      Width = 51
+      Height = 13
+      Anchors = [akLeft, akRight]
+      Caption = #1042#1086#1087#1088#1086#1089' '#8470
+    end
+    object lCurQuest: TLabel
+      Left = 167
+      Top = 10
+      Width = 16
+      Height = 18
+      Anchors = [akLeft, akRight]
+      Caption = '46'
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = 33023
+      Font.Height = -15
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Visible = False
+    end
+    object Label5: TLabel
+      Left = 116
+      Top = 12
+      Width = 12
+      Height = 13
+      Anchors = [akLeft, akRight]
+      Caption = #1080#1079
+    end
+    object lQCount: TLabel
+      Left = 137
+      Top = 10
+      Width = 16
+      Height = 18
+      Anchors = [akLeft, akRight]
+      Caption = '46'
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = 25284
+      Font.Height = -15
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Bevel9: TBevel
+      Left = 635
+      Top = 269
+      Width = 1
+      Height = 33
+      Anchors = [akRight, akBottom]
+    end
+    object Label15: TLabel
+      Left = 15
+      Top = 28
+      Width = 48
+      Height = 13
+      Anchors = [akLeft, akRight]
+      Caption = #1042#1086#1087#1088#1086#1089':'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Bevel12: TBevel
+      Left = 7
+      Top = 39
+      Width = 787
+      Height = 46
+    end
+    object Label16: TLabel
+      Left = 15
+      Top = 379
+      Width = 143
+      Height = 13
+      Anchors = [akLeft, akRight]
+      Caption = #1053#1086#1088#1084#1072#1090#1080#1074#1085#1099#1081' '#1076#1086#1082#1091#1084#1077#1085#1090
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object label_numpp: TLabel
+      Left = 644
+      Top = 13
+      Width = 36
+      Height = 13
+      Caption = 'NumPP'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 33023
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+      Visible = False
+    end
+    object DBNavigator1: TDBNavigator
+      Left = 189
+      Top = 9
+      Width = 405
+      Height = 19
+      DataSource = dsQuest
+      VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbInsert, nbDelete, nbPost, nbCancel, nbRefresh]
+      Anchors = [akLeft, akRight]
+      Hints.Strings = (
+        #1050' '#1087#1077#1088#1074#1086#1084#1091' '#1074#1086#1087#1088#1086#1089#1091
+        #1050' '#1087#1088#1077#1076#1099#1076#1091#1097#1077#1084#1091' '#1074#1086#1087#1088#1086#1089#1091
+        #1050' '#1089#1083#1077#1076#1091#1102#1097#1077#1084#1091' '#1074#1086#1087#1088#1086#1089#1091
+        #1050' '#1087#1086#1089#1083#1077#1076#1085#1077#1084#1091' '#1074#1086#1087#1088#1086#1089#1091
+        #1053#1086#1074#1099#1081' '#1074#1086#1087#1088#1086#1089
+        #1059#1076#1072#1083#1080#1090#1100' '#1074#1086#1087#1088#1086#1089
+        'Edit record'
+        #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1080#1079#1084#1077#1085#1077#1085#1080#1103
+        #1054#1090#1084#1077#1085#1080#1090#1100' '#1080#1079#1084#1077#1085#1077#1085#1080#1103
+        #1054#1073#1085#1086#1074#1080#1090#1100' '#1076#1072#1085#1085#1099#1077)
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+      OnClick = DBNavigator1Click
+    end
+    object QuestMemo: TDBMemo
+      Left = 7
+      Top = 46
+      Width = 787
+      Height = 41
+      Anchors = [akLeft, akRight]
+      BorderStyle = bsNone
+      Color = 16313050
+      DataField = 'Text'
+      DataSource = dsQuest
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Style = [fsBold, fsItalic]
+      ParentFont = False
+      TabOrder = 1
+      OnKeyPress = QuestMemoKeyPress
+    end
+    object pc: TPageControl
+      Left = 11
+      Top = 104
+      Width = 789
+      Height = 268
+      ActivePage = tsSingle
+      Anchors = [akRight]
+      HotTrack = True
+      Style = tsFlatButtons
+      TabHeight = 20
+      TabOrder = 2
+      OnChange = pcChange
+      object tsSingle: TTabSheet
+        Caption = #1054#1076#1085#1086#1074#1072#1088#1080#1072#1085#1090#1085#1099#1081
+        object Bevel7: TBevel
+          Left = 20
+          Top = 8
+          Width = 735
+          Height = 233
+          Shape = bsFrame
+        end
+        object Label4: TLabel
+          Left = 27
+          Top = 3
+          Width = 96
+          Height = 13
+          Caption = #1042#1072#1088#1080#1072#1085#1090#1099' '#1086#1090#1074#1077#1090#1086#1074':'
+        end
+        object Bevel3: TBevel
+          Left = 40
+          Top = 192
+          Width = 682
+          Height = 38
+        end
+        object Bevel4: TBevel
+          Left = 40
+          Top = 146
+          Width = 682
+          Height = 38
+        end
+        object Bevel5: TBevel
+          Left = 40
+          Top = 101
+          Width = 682
+          Height = 38
+        end
+        object Bevel6: TBevel
+          Left = 40
+          Top = 39
+          Width = 682
+          Height = 37
+        end
+        object Label6: TLabel
+          Left = 26
+          Top = 51
+          Width = 11
+          Height = 17
+          Caption = '4'
+          Font.Charset = SYMBOL_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Webdings'
+          Font.Style = []
+          ParentFont = False
+          Transparent = True
+        end
+        object Label7: TLabel
+          Left = 26
+          Top = 113
+          Width = 11
+          Height = 17
+          Caption = '4'
+          Font.Charset = SYMBOL_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Webdings'
+          Font.Style = []
+          ParentFont = False
+          Transparent = True
+        end
+        object Label8: TLabel
+          Left = 26
+          Top = 158
+          Width = 11
+          Height = 17
+          Caption = '4'
+          Font.Charset = SYMBOL_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Webdings'
+          Font.Style = []
+          ParentFont = False
+          Transparent = True
+        end
+        object Label9: TLabel
+          Left = 26
+          Top = 204
+          Width = 11
+          Height = 17
+          Caption = '4'
+          Font.Charset = SYMBOL_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Webdings'
+          Font.Style = []
+          ParentFont = False
+          Transparent = True
+        end
+        object DBMemo1: TDBMemo
+          Left = 41
+          Top = 40
+          Width = 681
+          Height = 35
+          BorderStyle = bsNone
+          Color = 14016986
+          DataField = 'Answer1'
+          DataSource = dsQuest
+          Font.Charset = RUSSIAN_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold, fsItalic]
+          ParentFont = False
+          ScrollBars = ssVertical
+          TabOrder = 0
+        end
+        object DBMemo2: TDBMemo
+          Left = 41
+          Top = 102
+          Width = 681
+          Height = 36
+          BorderStyle = bsNone
+          Color = 14342889
+          DataField = 'Answer2'
+          DataSource = dsQuest
+          Font.Charset = RUSSIAN_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold, fsItalic]
+          ParentFont = False
+          ScrollBars = ssVertical
+          TabOrder = 1
+        end
+        object DBMemo3: TDBMemo
+          Left = 41
+          Top = 147
+          Width = 681
+          Height = 37
+          BorderStyle = bsNone
+          Color = 14342889
+          DataField = 'Answer3'
+          DataSource = dsQuest
+          Font.Charset = RUSSIAN_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold, fsItalic]
+          ParentFont = False
+          ScrollBars = ssVertical
+          TabOrder = 2
+        end
+        object DBMemo4: TDBMemo
+          Left = 41
+          Top = 193
+          Width = 681
+          Height = 36
+          BorderStyle = bsNone
+          Color = 14342889
+          DataField = 'Answer4'
+          DataSource = dsQuest
+          Font.Charset = RUSSIAN_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold, fsItalic]
+          ParentFont = False
+          ScrollBars = ssVertical
+          TabOrder = 3
+        end
+        object StaticText1: TStaticText
+          Left = 7
+          Top = 39
+          Width = 27
+          Height = 14
+          Alignment = taCenter
+          AutoSize = False
+          BorderStyle = sbsSingle
+          Caption = '1'
+          Font.Charset = RUSSIAN_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold, fsItalic]
+          ParentFont = False
+          TabOrder = 4
+        end
+        object StaticText2: TStaticText
+          Left = 7
+          Top = 101
+          Width = 27
+          Height = 14
+          Alignment = taCenter
+          AutoSize = False
+          BorderStyle = sbsSingle
+          Caption = '2'
+          Font.Charset = RUSSIAN_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold, fsItalic]
+          ParentFont = False
+          TabOrder = 5
+        end
+        object StaticText3: TStaticText
+          Left = 7
+          Top = 146
+          Width = 27
+          Height = 14
+          Alignment = taCenter
+          AutoSize = False
+          BorderStyle = sbsSingle
+          Caption = '3'
+          Font.Charset = RUSSIAN_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold, fsItalic]
+          ParentFont = False
+          TabOrder = 6
+        end
+        object StaticText4: TStaticText
+          Left = 7
+          Top = 192
+          Width = 27
+          Height = 14
+          Alignment = taCenter
+          AutoSize = False
+          BorderStyle = sbsSingle
+          Caption = '4'
+          Font.Charset = RUSSIAN_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold, fsItalic]
+          ParentFont = False
+          TabOrder = 7
+        end
+        object StaticText5: TStaticText
+          Left = 39
+          Top = 24
+          Width = 124
+          Height = 13
+          Alignment = taCenter
+          AutoSize = False
+          BorderStyle = sbsSingle
+          Caption = #1042#1077#1088#1085#1099#1081' '#1086#1090#1074#1077#1090':  '
+          Font.Charset = RUSSIAN_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 8
+        end
+        object StaticText6: TStaticText
+          Left = 39
+          Top = 85
+          Width = 124
+          Height = 14
+          Alignment = taCenter
+          AutoSize = False
+          BorderStyle = sbsSingle
+          Caption = #1053#1077#1074#1077#1088#1085#1099#1077' '#1086#1090#1074#1077#1090#1099':  '
+          Font.Charset = RUSSIAN_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 9
+        end
+      end
+      object tsMultiple: TTabSheet
+        Caption = #1052#1091#1083#1100#1090#1080#1074#1072#1088#1080#1072#1085#1090#1085#1099#1081
+        ImageIndex = 1
+        object grdQuest2: TDBGridEh
+          Left = 0
+          Top = 8
+          Width = 475
+          Height = 232
+          AutoFitColWidths = True
+          DataSource = dsQuest2
+          Flat = True
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          FooterColor = clWindow
+          FooterFont.Charset = DEFAULT_CHARSET
+          FooterFont.Color = clWindowText
+          FooterFont.Height = -11
+          FooterFont.Name = 'MS Sans Serif'
+          FooterFont.Style = []
+          OptionsEh = [dghFixed3D, dghResizeWholeRightPart, dghHighlightFocus, dghClearSelection, dghFitRowHeightToText, dghTraceColSizing]
+          ParentFont = False
+          RowHeight = 2
+          RowLines = 1
+          TabOrder = 0
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -12
+          TitleFont.Name = 'MS Sans Serif'
+          TitleFont.Style = []
+          TitleHeight = 50
+          VertScrollBar.Tracking = True
+          OnCellClick = grdQuest2CellClick
+          Columns = <
+            item
+              EditButtons = <>
+              FieldName = 'NUM'
+              Footers = <>
+              Title.Caption = #8470
+              Width = 20
+            end
+            item
+              EditButtons = <>
+              FieldName = 'ANSWER'
+              Footers = <>
+              Title.Alignment = taCenter
+              Title.Caption = #1042#1072#1088#1080#1072#1085#1090
+              Width = 420
+            end
+            item
+              EditButtons = <>
+              FieldName = 'CALCYES'
+              Footers = <>
+              Title.Alignment = taCenter
+              Title.Caption = #1042#1077#1088#1077#1085'?'
+              Title.Orientation = tohVertical
+              Width = 17
+            end>
+        end
+      end
+      object TSGraph: TTabSheet
+        Caption = #1043#1088#1072#1092#1080#1095#1077#1089#1082#1080#1081
+        ImageIndex = 2
+        object Bevel11: TBevel
+          Left = 0
+          Top = 8
+          Width = 781
+          Height = 233
+          Shape = bsFrame
+        end
+        object Label14: TLabel
+          Left = 27
+          Top = 3
+          Width = 96
+          Height = 13
+          Caption = #1042#1072#1088#1080#1072#1085#1090#1099' '#1086#1090#1074#1077#1090#1086#1074':'
+        end
+        object Image1: TImage
+          Left = 7
+          Top = 52
+          Width = 182
+          Height = 144
+          Proportional = True
+          Stretch = True
+        end
+        object SBSound1: TSpeedButton
+          Left = 164
+          Top = 202
+          Width = 20
+          Height = 18
+          Hint = #1042#1099#1073#1086#1088' '#1089#1086#1086#1090#1074#1077#1090#1089#1090#1074#1091#1102#1097#1077#1075#1086' '#1092#1072#1081#1083#1072
+          Caption = '...'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -15
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          NumGlyphs = 2
+          ParentFont = False
+          ParentShowHint = False
+          ShowHint = True
+          OnClick = SBSound1Click
+        end
+        object Label17: TLabel
+          Left = 514
+          Top = 20
+          Width = 59
+          Height = 13
+          Caption = #1050#1086#1083#1080#1095#1077#1089#1090#1074#1086
+          Visible = False
+        end
+        object StaticText11: TStaticText
+          Left = 52
+          Top = 16
+          Width = 124
+          Height = 14
+          Alignment = taCenter
+          AutoSize = False
+          BorderStyle = sbsSingle
+          Caption = #1042#1077#1088#1085#1099#1081' '#1086#1090#1074#1077#1090':  '
+          Font.Charset = RUSSIAN_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 0
+        end
+        object StaticText12: TStaticText
+          Left = 208
+          Top = 16
+          Width = 124
+          Height = 14
+          Alignment = taCenter
+          AutoSize = False
+          BorderStyle = sbsSingle
+          Caption = #1053#1077#1074#1077#1088#1085#1099#1077' '#1086#1090#1074#1077#1090#1099':  '
+          Font.Charset = RUSSIAN_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 1
+        end
+        object Edit5: TEdit
+          Left = 540
+          Top = 13
+          Width = 26
+          Height = 24
+          TabOrder = 2
+          Text = '3'
+          Visible = False
+        end
+        object UpDown1: TUpDown
+          Left = 566
+          Top = 13
+          Width = 13
+          Height = 20
+          Associate = Edit5
+          Min = 1
+          Max = 3
+          Position = 3
+          TabOrder = 3
+          Visible = False
+        end
+        object Panel4: TPanel
+          Left = 195
+          Top = 33
+          Width = 190
+          Height = 202
+          BevelOuter = bvNone
+          Color = 14869218
+          TabOrder = 4
+          object Image2: TImage
+            Left = 3
+            Top = 20
+            Width = 183
+            Height = 143
+            Proportional = True
+            Stretch = True
+          end
+          object SpeedButton2: TSpeedButton
+            Left = 163
+            Top = 171
+            Width = 20
+            Height = 18
+            Hint = #1042#1099#1073#1086#1088' '#1089#1086#1086#1090#1074#1077#1090#1089#1090#1074#1091#1102#1097#1077#1075#1086' '#1092#1072#1081#1083#1072
+            Caption = '...'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -15
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            NumGlyphs = 2
+            ParentFont = False
+            ParentShowHint = False
+            ShowHint = True
+            OnClick = SpeedButton2Click
+          end
+          object StaticText8: TStaticText
+            Left = 84
+            Top = 3
+            Width = 27
+            Height = 14
+            Alignment = taCenter
+            AutoSize = False
+            BorderStyle = sbsSingle
+            Caption = '1'
+            Font.Charset = RUSSIAN_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold, fsItalic]
+            ParentFont = False
+            TabOrder = 0
+          end
+          object DBEdit5: TDBEdit
+            Left = 7
+            Top = 170
+            Width = 156
+            Height = 24
+            DataField = 'PATH1'
+            DataSource = dsQuestGr
+            TabOrder = 1
+          end
+        end
+        object Panel5: TPanel
+          Left = 390
+          Top = 33
+          Width = 190
+          Height = 202
+          BevelOuter = bvNone
+          Color = 14869218
+          TabOrder = 5
+          object Image3: TImage
+            Left = 3
+            Top = 20
+            Width = 183
+            Height = 143
+            Proportional = True
+            Stretch = True
+          end
+          object SpeedButton3: TSpeedButton
+            Left = 163
+            Top = 171
+            Width = 20
+            Height = 18
+            Hint = #1042#1099#1073#1086#1088' '#1089#1086#1086#1090#1074#1077#1090#1089#1090#1074#1091#1102#1097#1077#1075#1086' '#1092#1072#1081#1083#1072
+            Caption = '...'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -15
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            NumGlyphs = 2
+            ParentFont = False
+            ParentShowHint = False
+            ShowHint = True
+            OnClick = SpeedButton3Click
+          end
+          object StaticText7: TStaticText
+            Left = 84
+            Top = 3
+            Width = 27
+            Height = 14
+            Alignment = taCenter
+            AutoSize = False
+            BorderStyle = sbsSingle
+            Caption = '2'
+            Font.Charset = RUSSIAN_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold, fsItalic]
+            ParentFont = False
+            TabOrder = 0
+          end
+          object DBEdit6: TDBEdit
+            Left = 7
+            Top = 170
+            Width = 156
+            Height = 24
+            DataField = 'PATH2'
+            DataSource = dsQuestGr
+            TabOrder = 1
+          end
+        end
+        object Panel6: TPanel
+          Left = 585
+          Top = 33
+          Width = 190
+          Height = 202
+          BevelOuter = bvNone
+          Color = 14869218
+          TabOrder = 6
+          object Image4: TImage
+            Left = 3
+            Top = 20
+            Width = 183
+            Height = 143
+            Proportional = True
+            Stretch = True
+          end
+          object SpeedButton4: TSpeedButton
+            Left = 163
+            Top = 171
+            Width = 20
+            Height = 18
+            Hint = #1042#1099#1073#1086#1088' '#1089#1086#1086#1090#1074#1077#1090#1089#1090#1074#1091#1102#1097#1077#1075#1086' '#1092#1072#1081#1083#1072
+            Caption = '...'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -15
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            NumGlyphs = 2
+            ParentFont = False
+            ParentShowHint = False
+            ShowHint = True
+            OnClick = SpeedButton4Click
+          end
+          object StaticText9: TStaticText
+            Left = 84
+            Top = 3
+            Width = 27
+            Height = 14
+            Alignment = taCenter
+            AutoSize = False
+            BorderStyle = sbsSingle
+            Caption = '3'
+            Font.Charset = RUSSIAN_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold, fsItalic]
+            ParentFont = False
+            TabOrder = 0
+          end
+          object DBEdit7: TDBEdit
+            Left = 7
+            Top = 170
+            Width = 156
+            Height = 24
+            DataField = 'PATH3'
+            DataSource = dsQuestGr
+            TabOrder = 1
+          end
+        end
+        object DBEdit4: TDBEdit
+          Left = 7
+          Top = 202
+          Width = 156
+          Height = 24
+          DataField = 'PATH0'
+          DataSource = dsQuestGr
+          TabOrder = 7
+        end
+      end
+    end
+    object btnGoTo: TBitBtn
+      Left = 630
+      Top = -37
+      Width = 106
+      Height = 22
+      Anchors = [akRight, akBottom]
+      Caption = #1055#1077#1088#1077#1081#1090#1080' '#1082' '#8470
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 4
+      Visible = False
+      Glyph.Data = {
+        42020000424D4202000000000000420000002800000010000000100000000100
+        1000030000000002000000000000000000000000000000000000007C0000E003
+        00001F000000396739673967396739671863B556D65A39673967396739673967
+        39673967396739673967396739673967186394529452D65A3967396739673967
+        396739673967396739673967396739670F1DD65A524A734ED65A396739673967
+        396739673967396739673967396739675121ED18524A31469452186339673967
+        3967396739673967396739673967396739672F1DCA143146524AD65A39673967
+        3967396739673967396739673967396739675225ED18A8103146734ED65A3967
+        396739673967396739673967396739673967B52D3121CB141042314694521863
+        396739673967396739673967396739673967396774250E1DA910314694521863
+        3967396739673967396739673967396739673967D5315221ED18CA14D65A3967
+        3967396739673967396739673967396739671863163A942931210D1939673967
+        396739673967396739673967396739673967F75E373ED5317325396739673967
+        39673967396739673967396739673967396737423742F6351863396739673967
+        3967396739673967396739673967396718635746373ED65A3967396739673967
+        3967396739673967396739673967396718635746163E39673967396739673967
+        3967396739673967396739673967396757465742396739673967396739673967
+        3967396739673967396739673967396757463967396739673967396739673967
+        396739673967}
+      Layout = blGlyphRight
+    end
+    object GotoNum: TEdit
+      Left = 747
+      Top = -38
+      Width = 33
+      Height = 27
+      Anchors = [akRight, akBottom]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 5
+      Text = '1'
+      Visible = False
+    end
+    object DBEdit2: TDBEdit
+      Left = 13
+      Top = 392
+      Width = 696
+      Height = 26
+      DataField = 'NormDoc'
+      DataSource = dsQuest
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 3
+    end
+    object DBEditEh1: TDBEditEh
+      Left = 78
+      Top = 8
+      Width = 33
+      Height = 24
+      DataField = 'NUMPP'
+      DataSource = dsQuest
+      EditButtons = <>
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 33023
+      Font.Height = -15
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 6
+      Visible = True
+    end
+    object button_sort: TButton
+      Left = 689
+      Top = 7
+      Width = 105
+      Height = 26
+      Caption = #1055#1077#1088#1077#1089#1086#1088#1090#1080#1088#1086#1074#1072#1090#1100
+      TabOrder = 7
+      OnClick = button_sortClick
     end
   end
   object Panel1: TPanel
     Left = 0
     Top = 0
     Width = 1066
-    Height = 49
+    Height = 40
     Align = alTop
     Color = 8306151
     TabOrder = 0
     DesignSize = (
       1066
-      49)
+      40)
     object SpeedButton1: TSpeedButton
-      Left = 6
+      Left = 5
       Top = 2
-      Width = 51
-      Height = 42
+      Width = 41
+      Height = 34
       Hint = #1042#1099#1093#1086#1076
       Flat = True
       Glyph.Data = {
@@ -1537,25 +1537,25 @@ object FrmAsk2: TFrmAsk2
       OnClick = SpeedButton1Click
     end
     object Label13: TLabel
-      Left = 328
-      Top = 12
-      Width = 396
-      Height = 25
+      Left = 267
+      Top = 10
+      Width = 329
+      Height = 22
       Alignment = taCenter
       Anchors = [akTop]
       Caption = #1056#1077#1076#1072#1082#1090#1086#1088' '#1101#1082#1079#1072#1084#1077#1085#1072#1094#1080#1086#1085#1085#1099#1093' '#1074#1086#1087#1088#1086#1089#1086#1074
       Font.Charset = RUSSIAN_CHARSET
       Font.Color = clMaroon
-      Font.Height = -23
+      Font.Height = -19
       Font.Name = 'Times New Roman'
       Font.Style = [fsBold]
       ParentFont = False
     end
     object btnList: TSpeedButton
-      Left = 70
+      Left = 57
       Top = 2
-      Width = 251
-      Height = 42
+      Width = 204
+      Height = 34
       Hint = #1055#1077#1095#1072#1090#1100' '#1074#1086#1087#1088#1086#1089#1086#1074
       AllowAllUp = True
       GroupIndex = 2
@@ -1563,7 +1563,7 @@ object FrmAsk2: TFrmAsk2
       Flat = True
       Font.Charset = RUSSIAN_CHARSET
       Font.Color = clWindowText
-      Font.Height = -13
+      Font.Height = -11
       Font.Name = 'Arial'
       Font.Style = []
       Glyph.Data = {
@@ -1671,10 +1671,10 @@ object FrmAsk2: TFrmAsk2
       OnClick = btnListClick
     end
     object btn_commit: TSpeedButton
-      Left = 862
+      Left = 700
       Top = 2
-      Width = 150
-      Height = 42
+      Width = 122
+      Height = 34
       Hint = #1057#1086#1093#1088#1072#1085#1077#1085#1080#1077' '#1080#1079#1084#1077#1085#1077#1085#1080#1081' '#1074' '#1041#1044
       Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
       Flat = True
@@ -1784,10 +1784,10 @@ object FrmAsk2: TFrmAsk2
     end
   end
   object DBGridEh1: TDBGridEh
-    Left = 16
-    Top = 56
-    Width = 688
-    Height = 81
+    Left = 13
+    Top = 46
+    Width = 559
+    Height = 65
     AutoFitColWidths = True
     Color = 14869218
     DataSource = dsKat
@@ -1796,13 +1796,13 @@ object FrmAsk2: TFrmAsk2
     Flat = False
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
-    Font.Height = -15
+    Font.Height = -12
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     FooterColor = clWindow
     FooterFont.Charset = DEFAULT_CHARSET
     FooterFont.Color = clWindowText
-    FooterFont.Height = -13
+    FooterFont.Height = -11
     FooterFont.Name = 'MS Sans Serif'
     FooterFont.Style = []
     OptionsEh = [dghFixed3D, dghResizeWholeRightPart, dghHighlightFocus, dghClearSelection, dghFitRowHeightToText, dghAutoSortMarking, dghMultiSortMarking, dghTraceColSizing]
@@ -1813,7 +1813,7 @@ object FrmAsk2: TFrmAsk2
     TabOrder = 1
     TitleFont.Charset = RUSSIAN_CHARSET
     TitleFont.Color = clNavy
-    TitleFont.Height = -15
+    TitleFont.Height = -12
     TitleFont.Name = 'Arial'
     TitleFont.Style = [fsBold]
     TitleLines = 1
@@ -1825,21 +1825,21 @@ object FrmAsk2: TFrmAsk2
         Footers = <>
         Title.Alignment = taCenter
         Title.Caption = #1050#1072#1090#1077#1075#1086#1088#1080#1103' '
-        Width = 474
+        Width = 385
       end
       item
         EditButtons = <>
         FieldName = 'PRIM'
         Footers = <>
         Title.Caption = #1055#1088#1080#1084#1077#1095#1072#1085#1080#1077
-        Width = 192
+        Width = 156
       end>
   end
   object grdExam: TDBGridEh
-    Left = 15
-    Top = 136
-    Width = 1036
-    Height = 121
+    Left = 12
+    Top = 111
+    Width = 842
+    Height = 98
     Anchors = [akLeft, akTop, akRight]
     AutoFitColWidths = True
     Color = 14869218
@@ -1848,13 +1848,13 @@ object FrmAsk2: TFrmAsk2
     Flat = True
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
-    Font.Height = -15
+    Font.Height = -12
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     FooterColor = clWindow
     FooterFont.Charset = DEFAULT_CHARSET
     FooterFont.Color = clWindowText
-    FooterFont.Height = -13
+    FooterFont.Height = -11
     FooterFont.Name = 'MS Sans Serif'
     FooterFont.Style = []
     OptionsEh = [dghFixed3D, dghResizeWholeRightPart, dghHighlightFocus, dghClearSelection, dghFitRowHeightToText, dghAutoSortMarking, dghMultiSortMarking, dghTraceColSizing]
@@ -1865,7 +1865,7 @@ object FrmAsk2: TFrmAsk2
     TabOrder = 2
     TitleFont.Charset = RUSSIAN_CHARSET
     TitleFont.Color = clNavy
-    TitleFont.Height = -17
+    TitleFont.Height = -12
     TitleFont.Name = 'Arial'
     TitleFont.Style = [fsBold]
     TitleLines = 1
@@ -1876,6 +1876,7 @@ object FrmAsk2: TFrmAsk2
         FieldName = 'ID'
         Footers = <>
         Visible = False
+        Width = 68
       end
       item
         EditButtons = <>
@@ -1883,7 +1884,7 @@ object FrmAsk2: TFrmAsk2
         Footers = <>
         Title.Alignment = taCenter
         Title.Caption = #1058#1077#1084#1099':'
-        Width = 888
+        Width = 722
       end>
   end
   object QryKAT: TIBQuery
@@ -2334,7 +2335,6 @@ object FrmAsk2: TFrmAsk2
     Transaction = DataModule1.IBTransaction1
     AfterPost = tabQuestGrAfterPost
     OnNewRecord = tabQuestGrNewRecord
-    Active = True
     FieldDefs = <
       item
         Name = 'QUESTID'
