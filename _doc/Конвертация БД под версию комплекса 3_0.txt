@@ -1,0 +1,116 @@
+Конвертация БД EXAM.GDB для работы с новой версией комплекса приложений для ОТ V1.1
+
+1. Делаем копию старой БД (EXAM.GDB).
+
+2. Открываем БД с помощью IBExpert.exe, указываем версию сервера Firebird 2.1, и жмём "Регистрировать".
+
+3. На вкладке "Службы" выбираем "Резервирование базы данных", выбираем путь к БД, нажимаем "Начать резервное копирование", должно написать "Backup completed", нажимаем "Close"
+
+4. На вкладке "Службы" выбираем "Восстановление базы данных":
+"Тип восстановления" - Переписать существующую БД
+"Выберите базу" - [Disk:]\...\tb2004\data\EXAM.GDB
+"Имя файла" - выбираем вручную [Disk:]\...\tb2004\data\EXAM.FBK
+Жмём "Начать восстановление" вводим пароль и жмём ОК, должно написать "Restore completed", нажимаем "Close".
+
+5. Слева в "Database Explorer" правой клавишей мыши -> "Удалить регистрационную информацию".
+Закрываем IBExpert.
+
+6. Снова открываем БД с помощью IBExpert.exe, указываем версию сервера Firebird 2.5 и "Кодировка" - WIN1251, жмём "Регистрировать".
+
+7. Выбираем раскрывающийся список "Таблицы" находим "QUEST" и открываем её, жмём "Редактировать структуру таблицы" (F2), переходим на последнюю строку и нажимаем клавишу "вниз". В поле "Название" вводим NUMPP, в поле "По умолчанию" вводим значение 99999.
+Жмём "Компиляция" (Ctrl+F9) -> Подтвердить.
+
+8. В IBExpert запускаем SQL редактор (F12), удостовериться что путь к БД вверху указан правильно. Далее все скрипты вставляем в SQL редактор. 
+
+8.1 Вставляем скрипт для создания процедуры PROC_QUEST_COUNT:
+
+create or alter procedure PROC_QUEST_COUNT
+returns (
+    PAR_COUNT integer)
+as
+BEGIN
+    select count(*) from (select examid from quest group by examid) into :par_count;
+    suspend;
+END
+
+Жмём "Выполнить" (F9), затем подтвердить транзакцию (Ctrl+Alt+C).
+
+8.2 Вставляем скрипт для создания процедуры PROC_QUEST_SORT:
+
+create or alter procedure PROC_QUEST_SORT (
+    PAR_EXAMID integer)
+as
+declare variable VAR_COUNT integer;
+declare variable VAR_I integer;
+declare variable VAR_ID integer;
+begin
+  VAR_I = 1;
+--  for select ID from QUEST where EXAMID = :PAR_EXAMID into VAR_ID --
+  for select ID from QUEST where EXAMID = :PAR_EXAMID order by numpp into VAR_ID
+  do
+  begin
+    update QUEST set NUMPP = :VAR_I where (ID = :VAR_ID);
+    VAR_I = VAR_I + 1;
+  end
+  suspend;
+end
+
+Жмём "Выполнить" (F9), затем подтвердить транзакцию (Ctrl+Alt+C).
+
+8.3 Вставляем скрипт для создания процедуры PROC_QUEST_SORT_ALL:
+
+create or alter procedure PROC_QUEST_SORT_ALL
+as
+declare variable VAR_COUNT integer;
+declare variable VAR_I integer;
+declare variable VAR_EXAMID integer;
+BEGIN
+    update quest set numpp=id where numpp<1;
+    execute PROCEDURE PROC_QUEST_COUNT returning_values :VAR_count;
+    VAR_i=1;
+    var_examid=0;
+    WHILE(VAR_i < (:VAR_count+1)) DO
+        begin
+            select min(examid) from quest where examid>:var_examid into var_examid;
+            execute PROCEDURE PROC_QUEST_SORT var_examid;
+            var_i=:VAR_i+1;
+        end
+    suspend;
+END
+
+Жмём "Выполнить" (F9), затем подтвердить транзакцию (Ctrl+Alt+C).
+
+8.4 Вставляем скрипт для создания процедуры PROC_QUEST_MOVE_INSERT:
+
+create or alter procedure PROC_QUEST_MOVE_INSERT (
+    PAR_ID integer,
+    PAR_NUMPP integer)
+as
+declare variable VAR_NUMPP integer;
+declare variable VAR_ID_PREV integer;
+declare variable VAR_EXAMID integer;
+BEGIN
+    SELECT numpp       FROM quest where (id = :par_id)  INTO var_numpp;
+    if (var_numpp=1) then exit; 
+    SELECT examid   FROM quest where (id = :par_id)  INTO VAR_examid;
+    while(var_numpp>:par_numpp) do begin
+        select id from quest where (numpp = (:var_numpp-1) and examid=:var_examid)   INTO var_id_prev;
+            /* next1 */
+            update quest set numpp=0              where (id=:var_id_prev);
+            /* next2 */
+            update quest set numpp=numpp-1        where (id=:par_id);
+            /* next3 */
+            update quest set numpp=(:var_numpp)   where (numpp=0);
+
+        SELECT numpp       FROM quest where (id = :par_id)  INTO var_numpp;
+    end
+    suspend;
+END
+
+Жмём "Выполнить" (F9), затем подтвердить транзакцию (Ctrl+Alt+C).
+Убедиться что в выпадающем списке "Процедуры" появилось 4 процедуры.
+
+9. Открываем процедуру "PROC_QUEST_SORT_ALL", жмём "Выполнить процедуру"(F9) -> "Подтвердить транзакцию" (Ctrl+Alt+C).
+
+10. Открываем таблицу "QUEST" жмём "Подтвердить транзакцию" (Ctrl+Alt+C).
+В конце таблицы, в поле NUMPP должны появиться значения от 1-го до 20-ти, возможно и больше в зависимости от количества вопросов в теме.
